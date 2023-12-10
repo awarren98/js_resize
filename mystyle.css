@@ -1,0 +1,53 @@
+body {
+  box-sizing: border-box;
+  width: 100%;
+  font-size: 38px;
+}
+
+.main {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+
+.unit-btns {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+button {
+  min-width: fit-content;
+  width: calc(90% / 3);
+  height: 50px;
+  background-color: cornflowerblue;
+  border: 5px groove rgb(66, 101, 165);
+  color: white;
+  padding: 5px 5px;
+  text-align: center;
+  font-size: 20px;
+  text-transform: uppercase;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: rgb(66, 101, 165);
+  color: rgb(226, 225, 225);
+}
+
+#wh {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+@media screen and (max-width: 400px) {
+  body {
+    font-size: 18px;
+  }
+  .unit-btns {
+    flex-direction: column;
+  }
+}
